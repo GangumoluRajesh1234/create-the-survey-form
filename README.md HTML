@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">We value your feedback, please fill out this survey.</p>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Age:</label>
+        <input type="number" id="number" name="age" min="1" max="120" placeholder="Enter your age" required>
+      </div>
+      <div class="form-group">
+        <label for="dropdown">What is your role?</label>
+        <select id="dropdown" name="role" required>
+          <option value="" disabled selected>Select your role</option>
+          <option value="student">Student</option>
+          <option value="professional">Professional</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>How did you find us?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="find-us" value="friends" required> Friends</label>
+          <label><input type="radio" name="find-us" value="search" required> Search Engine</label>
+          <label><input type="radio" name="find-us" value="advertisement" required> Advertisement</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>What do you like most about our site? (Select all that apply)</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="likes" value="design"> Design</label>
+          <label><input type="checkbox" name="likes" value="content"> Content</label>
+          <label><input type="checkbox" name="likes" value="usability"> Usability</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="comments">Any comments or suggestions?</label>
+        <textarea id="comments" name="comments" placeholder="Enter your comments here"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+Maya manneha se ni hao se tu ki kaaso tiha
